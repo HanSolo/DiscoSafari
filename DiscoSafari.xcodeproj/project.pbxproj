@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4FB377F6266F6D72009D6BA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB377F5266F6D72009D6BA7 /* AppDelegate.swift */; };
+		4FB377F9266F6D72009D6BA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FB377F7266F6D72009D6BA7 /* Main.storyboard */; };
+		4FB377FB266F6D72009D6BA7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB377FA266F6D72009D6BA7 /* ViewController.swift */; };
+		4FB377FD266F6D74009D6BA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FB377FC266F6D74009D6BA7 /* Assets.xcassets */; };
+		4FB37804266F6D74009D6BA7 /* DiscoSafari Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4FB37803266F6D74009D6BA7 /* DiscoSafari Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4FB37809266F6D74009D6BA7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FB37808266F6D74009D6BA7 /* Cocoa.framework */; };
+		4FB3780C266F6D74009D6BA7 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB3780B266F6D74009D6BA7 /* SafariWebExtensionHandler.swift */; };
+		4FB3780F266F6D74009D6BA7 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 4FB3780E266F6D74009D6BA7 /* _locales */; };
+		4FB37811266F6D74009D6BA7 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 4FB37810266F6D74009D6BA7 /* images */; };
+		4FB37813266F6D74009D6BA7 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 4FB37812266F6D74009D6BA7 /* manifest.json */; };
+		4FB37815266F6D74009D6BA7 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 4FB37814266F6D74009D6BA7 /* background.js */; };
+		4FB37817266F6D74009D6BA7 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 4FB37816266F6D74009D6BA7 /* content.js */; };
+		4FB37819266F6D74009D6BA7 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 4FB37818266F6D74009D6BA7 /* popup.html */; };
+		4FB3781B266F6D74009D6BA7 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 4FB3781A266F6D74009D6BA7 /* popup.css */; };
+		4FB3781D266F6D74009D6BA7 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 4FB3781C266F6D74009D6BA7 /* popup.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4FB37805266F6D74009D6BA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FB377E9266F6D72009D6BA7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4FB37802266F6D74009D6BA7;
+			remoteInfo = "DiscoSafari Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4FB37825266F6D74009D6BA7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4FB37804266F6D74009D6BA7 /* DiscoSafari Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4FB377F1266F6D72009D6BA7 /* DiscoSafari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiscoSafari.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FB377F4266F6D72009D6BA7 /* DiscoSafari.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DiscoSafari.entitlements; sourceTree = "<group>"; };
+		4FB377F5266F6D72009D6BA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4FB377F8266F6D72009D6BA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4FB377FA266F6D72009D6BA7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4FB377FC266F6D74009D6BA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4FB377FE266F6D74009D6BA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FB37803266F6D74009D6BA7 /* DiscoSafari Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "DiscoSafari Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FB37808266F6D74009D6BA7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		4FB3780B266F6D74009D6BA7 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		4FB3780E266F6D74009D6BA7 /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
+		4FB37810266F6D74009D6BA7 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		4FB37812266F6D74009D6BA7 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		4FB37814266F6D74009D6BA7 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
+		4FB37816266F6D74009D6BA7 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
+		4FB37818266F6D74009D6BA7 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
+		4FB3781A266F6D74009D6BA7 /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
+		4FB3781C266F6D74009D6BA7 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
+		4FB3781E266F6D74009D6BA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FB3781F266F6D74009D6BA7 /* DiscoSafari_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DiscoSafari_Extension.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4FB377EE266F6D72009D6BA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FB37800266F6D74009D6BA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FB37809266F6D74009D6BA7 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4FB377E8266F6D72009D6BA7 = {
+			isa = PBXGroup;
+			children = (
+				4FB377F3266F6D72009D6BA7 /* DiscoSafari */,
+				4FB3780A266F6D74009D6BA7 /* DiscoSafari Extension */,
+				4FB37807266F6D74009D6BA7 /* Frameworks */,
+				4FB377F2266F6D72009D6BA7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4FB377F2266F6D72009D6BA7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4FB377F1266F6D72009D6BA7 /* DiscoSafari.app */,
+				4FB37803266F6D74009D6BA7 /* DiscoSafari Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4FB377F3266F6D72009D6BA7 /* DiscoSafari */ = {
+			isa = PBXGroup;
+			children = (
+				4FB377F4266F6D72009D6BA7 /* DiscoSafari.entitlements */,
+				4FB377F5266F6D72009D6BA7 /* AppDelegate.swift */,
+				4FB377F7266F6D72009D6BA7 /* Main.storyboard */,
+				4FB377FA266F6D72009D6BA7 /* ViewController.swift */,
+				4FB377FC266F6D74009D6BA7 /* Assets.xcassets */,
+				4FB377FE266F6D74009D6BA7 /* Info.plist */,
+			);
+			path = DiscoSafari;
+			sourceTree = "<group>";
+		};
+		4FB37807266F6D74009D6BA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4FB37808266F6D74009D6BA7 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4FB3780A266F6D74009D6BA7 /* DiscoSafari Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4FB3780B266F6D74009D6BA7 /* SafariWebExtensionHandler.swift */,
+				4FB3781E266F6D74009D6BA7 /* Info.plist */,
+				4FB3781F266F6D74009D6BA7 /* DiscoSafari_Extension.entitlements */,
+				4FB3780D266F6D74009D6BA7 /* Resources */,
+			);
+			path = "DiscoSafari Extension";
+			sourceTree = "<group>";
+		};
+		4FB3780D266F6D74009D6BA7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4FB3780E266F6D74009D6BA7 /* _locales */,
+				4FB37810266F6D74009D6BA7 /* images */,
+				4FB37812266F6D74009D6BA7 /* manifest.json */,
+				4FB37814266F6D74009D6BA7 /* background.js */,
+				4FB37816266F6D74009D6BA7 /* content.js */,
+				4FB37818266F6D74009D6BA7 /* popup.html */,
+				4FB3781A266F6D74009D6BA7 /* popup.css */,
+				4FB3781C266F6D74009D6BA7 /* popup.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4FB377F0266F6D72009D6BA7 /* DiscoSafari */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FB37826266F6D74009D6BA7 /* Build configuration list for PBXNativeTarget "DiscoSafari" */;
+			buildPhases = (
+				4FB377ED266F6D72009D6BA7 /* Sources */,
+				4FB377EE266F6D72009D6BA7 /* Frameworks */,
+				4FB377EF266F6D72009D6BA7 /* Resources */,
+				4FB37825266F6D74009D6BA7 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4FB37806266F6D74009D6BA7 /* PBXTargetDependency */,
+			);
+			name = DiscoSafari;
+			productName = DiscoSafari;
+			productReference = 4FB377F1266F6D72009D6BA7 /* DiscoSafari.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4FB37802266F6D74009D6BA7 /* DiscoSafari Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FB37822266F6D74009D6BA7 /* Build configuration list for PBXNativeTarget "DiscoSafari Extension" */;
+			buildPhases = (
+				4FB377FF266F6D74009D6BA7 /* Sources */,
+				4FB37800266F6D74009D6BA7 /* Frameworks */,
+				4FB37801266F6D74009D6BA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DiscoSafari Extension";
+			productName = "DiscoSafari Extension";
+			productReference = 4FB37803266F6D74009D6BA7 /* DiscoSafari Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4FB377E9266F6D72009D6BA7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					4FB377F0266F6D72009D6BA7 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					4FB37802266F6D74009D6BA7 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = 4FB377EC266F6D72009D6BA7 /* Build configuration list for PBXProject "DiscoSafari" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4FB377E8266F6D72009D6BA7;
+			productRefGroup = 4FB377F2266F6D72009D6BA7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4FB377F0266F6D72009D6BA7 /* DiscoSafari */,
+				4FB37802266F6D74009D6BA7 /* DiscoSafari Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4FB377EF266F6D72009D6BA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FB377FD266F6D74009D6BA7 /* Assets.xcassets in Resources */,
+				4FB377F9266F6D72009D6BA7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FB37801266F6D74009D6BA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FB37815266F6D74009D6BA7 /* background.js in Resources */,
+				4FB3781B266F6D74009D6BA7 /* popup.css in Resources */,
+				4FB37819266F6D74009D6BA7 /* popup.html in Resources */,
+				4FB37811266F6D74009D6BA7 /* images in Resources */,
+				4FB37813266F6D74009D6BA7 /* manifest.json in Resources */,
+				4FB3780F266F6D74009D6BA7 /* _locales in Resources */,
+				4FB37817266F6D74009D6BA7 /* content.js in Resources */,
+				4FB3781D266F6D74009D6BA7 /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4FB377ED266F6D72009D6BA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FB377FB266F6D72009D6BA7 /* ViewController.swift in Sources */,
+				4FB377F6266F6D72009D6BA7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FB377FF266F6D74009D6BA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FB3780C266F6D74009D6BA7 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4FB37806266F6D74009D6BA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4FB37802266F6D74009D6BA7 /* DiscoSafari Extension */;
+			targetProxy = 4FB37805266F6D74009D6BA7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4FB377F7266F6D72009D6BA7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FB377F8266F6D72009D6BA7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4FB37820266F6D74009D6BA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4FB37821266F6D74009D6BA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		4FB37823266F6D74009D6BA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "DiscoSafari Extension/DiscoSafari_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L4A7549EHC;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "DiscoSafari Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = eu.hansolo.DiscoSafari.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4FB37824266F6D74009D6BA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "DiscoSafari Extension/DiscoSafari_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L4A7549EHC;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "DiscoSafari Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = eu.hansolo.DiscoSafari.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		4FB37827266F6D74009D6BA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DiscoSafari/DiscoSafari.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = L4A7549EHC;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = DiscoSafari/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = eu.hansolo.DiscoSafari;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4FB37828266F6D74009D6BA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DiscoSafari/DiscoSafari.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = L4A7549EHC;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = DiscoSafari/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = eu.hansolo.DiscoSafari;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4FB377EC266F6D72009D6BA7 /* Build configuration list for PBXProject "DiscoSafari" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FB37820266F6D74009D6BA7 /* Debug */,
+				4FB37821266F6D74009D6BA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FB37822266F6D74009D6BA7 /* Build configuration list for PBXNativeTarget "DiscoSafari Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FB37823266F6D74009D6BA7 /* Debug */,
+				4FB37824266F6D74009D6BA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FB37826266F6D74009D6BA7 /* Build configuration list for PBXNativeTarget "DiscoSafari" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FB37827266F6D74009D6BA7 /* Debug */,
+				4FB37828266F6D74009D6BA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4FB377E9266F6D72009D6BA7 /* Project object */;
+}
