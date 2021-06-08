@@ -13,16 +13,7 @@
         "256": "images/icon-256.png",
         "512": "images/icon-512.png"
     },
-
-    "background": {
-        "scripts": [ "background.js" ]
-    },
-
-    "content_scripts": [{
-        "js": [ "content.js" ],
-        "matches": [ "*://example.com/*" ]
-    }],
-
+    
     "browser_action": {
         "default_popup": "popup.html",
         "default_icon": {
@@ -31,7 +22,5 @@
             "32": "images/toolbar-icon-32.png",
             "38": "images/toolbar-icon-38.png"
         }
-    },
-
-    "permissions": [ ]
+    }
 }

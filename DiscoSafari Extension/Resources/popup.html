@@ -1,11 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
+  <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="popup.css">
-    <script type="module" src="popup.js"></script>
-</head>
-<body>
-    <strong>Hello World!</strong>
-</body>
+  </head>
+  <body>
+    <div class="container">
+      <div class="vbox">
+        <div class="hbox" style="padding:3px;">
+          <label id="javafxBundledLabel" class="label">JavaFX bundled</label>
+          <input id="javafxBundledCheckBox" type="checkbox"">
+        </div>
+        <div class="hbox" style="padding:3px;">
+          <label id="majorVersionLabel" class="label">Major version:</label>
+          <select id="majorVersionDropDown" name="majorVersion" class="dropdown"></select>
+        </div>
+        <div class="hbox" style="padding:3px;">
+          <label id="versionNumberLabel" class="label">Version number:</label>
+          <select id="versionNumberDropDown" name="versionNumber" class="dropdown"></select>
+        </div>
+        <div class="hbox" style="padding:3px;">
+          <label id="distributionLabel" class="label">Distribution:</label>
+          <select id="distributionDropDown" name="distribution" class="dropdown"></select>
+        </div>
+        <div class="hbox" style="padding:3px;">
+          <label id="operatingSystemLabel" class="label">Operatingsystem:</label>
+          <select id="operatingSystemDropDown" name="operatingSystem" class="dropdown""></select>
+        </div>
+        <div class="hbox" style="padding:3px;">
+          <label id="libcTypeLabel" class="label">Libc type:</label>
+          <select id="libcTypeDropDown" name="libcType" class="dropdown"></select>
+        </div>
+        <div class="hbox" style="padding:3px;">
+          <label id="architectureLabel" class="label">Architecture:</label>
+          <select id="architectureDropDown" name="architecture" class="dropdown"></select>
+        </div>
+        <div class="hbox" style="padding:3px;">
+          <label id="archiveTypeLabel" class="label">Archive type:</label>
+          <select id="archiveTypeDropDown" name="archiveType" class="dropdown"></select>
+        </div>
+        <div class="hbox" style="padding:3px;">
+          <label id="filenameLabel" class="filename-label">-</label>
+        </div>
+        <div>
+          <button id="downloadButton" type="button" class="button" disabled="true">Download</button>
+        </div>
+      </div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
 </html>

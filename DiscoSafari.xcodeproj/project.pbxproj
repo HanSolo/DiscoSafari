@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,8 +17,6 @@
 		4FB3780F266F6D74009D6BA7 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 4FB3780E266F6D74009D6BA7 /* _locales */; };
 		4FB37811266F6D74009D6BA7 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 4FB37810266F6D74009D6BA7 /* images */; };
 		4FB37813266F6D74009D6BA7 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 4FB37812266F6D74009D6BA7 /* manifest.json */; };
-		4FB37815266F6D74009D6BA7 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 4FB37814266F6D74009D6BA7 /* background.js */; };
-		4FB37817266F6D74009D6BA7 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 4FB37816266F6D74009D6BA7 /* content.js */; };
 		4FB37819266F6D74009D6BA7 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 4FB37818266F6D74009D6BA7 /* popup.html */; };
 		4FB3781B266F6D74009D6BA7 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 4FB3781A266F6D74009D6BA7 /* popup.css */; };
 		4FB3781D266F6D74009D6BA7 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 4FB3781C266F6D74009D6BA7 /* popup.js */; };
@@ -62,8 +60,6 @@
 		4FB3780E266F6D74009D6BA7 /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
 		4FB37810266F6D74009D6BA7 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
 		4FB37812266F6D74009D6BA7 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
-		4FB37814266F6D74009D6BA7 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
-		4FB37816266F6D74009D6BA7 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
 		4FB37818266F6D74009D6BA7 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
 		4FB3781A266F6D74009D6BA7 /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
 		4FB3781C266F6D74009D6BA7 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
@@ -147,8 +143,6 @@
 				4FB3780E266F6D74009D6BA7 /* _locales */,
 				4FB37810266F6D74009D6BA7 /* images */,
 				4FB37812266F6D74009D6BA7 /* manifest.json */,
-				4FB37814266F6D74009D6BA7 /* background.js */,
-				4FB37816266F6D74009D6BA7 /* content.js */,
 				4FB37818266F6D74009D6BA7 /* popup.html */,
 				4FB3781A266F6D74009D6BA7 /* popup.css */,
 				4FB3781C266F6D74009D6BA7 /* popup.js */,
@@ -213,7 +207,7 @@
 				};
 			};
 			buildConfigurationList = 4FB377EC266F6D72009D6BA7 /* Build configuration list for PBXProject "DiscoSafari" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -245,13 +239,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FB37815266F6D74009D6BA7 /* background.js in Resources */,
 				4FB3781B266F6D74009D6BA7 /* popup.css in Resources */,
 				4FB37819266F6D74009D6BA7 /* popup.html in Resources */,
 				4FB37811266F6D74009D6BA7 /* images in Resources */,
 				4FB37813266F6D74009D6BA7 /* manifest.json in Resources */,
 				4FB3780F266F6D74009D6BA7 /* _locales in Resources */,
-				4FB37817266F6D74009D6BA7 /* content.js in Resources */,
 				4FB3781D266F6D74009D6BA7 /* popup.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,8 +408,10 @@
 		4FB37823266F6D74009D6BA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "DiscoSafari Extension/DiscoSafari_Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = L4A7549EHC;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "DiscoSafari Extension/Info.plist";
@@ -427,6 +421,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = eu.hansolo.DiscoSafari.Extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -437,8 +432,10 @@
 		4FB37824266F6D74009D6BA7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "DiscoSafari Extension/DiscoSafari_Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = L4A7549EHC;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "DiscoSafari Extension/Info.plist";
@@ -448,6 +445,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = eu.hansolo.DiscoSafari.Extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -464,6 +462,7 @@
 				CODE_SIGN_ENTITLEMENTS = DiscoSafari/DiscoSafari.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = L4A7549EHC;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = DiscoSafari/Info.plist;
@@ -472,6 +471,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = eu.hansolo.DiscoSafari;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -487,6 +487,7 @@
 				CODE_SIGN_ENTITLEMENTS = DiscoSafari/DiscoSafari.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = L4A7549EHC;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = DiscoSafari/Info.plist;
@@ -495,6 +496,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = eu.hansolo.DiscoSafari;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
