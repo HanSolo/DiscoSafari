@@ -651,9 +651,21 @@ function normalizeJavaVersion(javaVersion) {
 function getDistributionFromText(text) {
   if (null == text || text === undefined) { return ''; }
   switch (text) {
+    case "zulu_prime":
+    case "ZULU_PRIME":
+    case "ZuluPrime":
+    case "zuluprime":
+    case "ZULUPRIME":
+      return 'zulu_prime';
     case "zulu":
     case "ZULU":
     case "Zulu":
+    case "zulu_core":
+    case "ZULU_CORE":
+    case "Zulu_Core":
+    case "zulucore":
+    case "ZULUCORE":
+    case "ZuluCore":
       return 'zulu';
     case "aoj":
     case "AOJ":
@@ -691,6 +703,10 @@ function getDistributionFromText(text) {
     case "GraalVMCE16":
     case "GraalVM_CE16":
       return 'graalvm_ce16';
+    case "jetbrains":
+    case "JetBrains":
+    case "JETBRAINS":
+      return 'jetbrains';
     case "liberica":
     case "LIBERICA":
     case "Liberica":
